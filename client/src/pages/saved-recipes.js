@@ -20,7 +20,7 @@ const SavedRecipes = () => {
         console.log(err)
       }
     }
-
+    
     fetchSavedRecipe();
 
   }, []);
