@@ -33,7 +33,7 @@ const SavedRecipes = () => {
       <h2>Saved Recipes</h2>
       <ul>
         {savedRecipes.map((recipe)=>(
-          <li key = {recipe._id}>
+          <li className = "recipe-box" key = {recipe._id}>
             {savedRecipes.includes(recipe._id) && <h1>Saved</h1>}
             <div>
               <h2>{recipe.name}</h2>

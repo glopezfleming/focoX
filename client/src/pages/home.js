@@ -59,12 +59,14 @@ const Home = () => {
       <h2>Recipes</h2>
       <ul>
         {recipes.map((recipe)=>(
-          <li key = {recipe._id}>
+          <li className = "recipe-box" key = {recipe._id}>
             <div>
               <h2>{recipe.name}</h2>
-              <button onClick = {() => saveRecipe(recipe._id)} disabled = {isRecipeSaved(recipe._id)}>
-                {isRecipeSaved(recipe._id) ? "Saved" : "Save"}
-              </button>
+              <div className = "save-button">
+                <button onClick = {() => saveRecipe(recipe._id)} disabled = {isRecipeSaved(recipe._id)}>
+                  {isRecipeSaved(recipe._id) ? "Saved" : "Save"}
+                </button>
+            </div>
             </div>
             <div>
               <p>{recipe.instructions}</p>

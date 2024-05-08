@@ -28,7 +28,7 @@ body {
   padding: 20px;
   background-color: white;
   border-radius: 5px;
-  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   margin: 20px;
   width: 400px;
 }
@@ -98,7 +98,8 @@ li {
 }
 
 h2 {
-  margin-top: 0;
+  margin-top: 20px;
+  text-align: center; 
 }
 
 img {
@@ -114,4 +115,56 @@ img {
 p {
   max-width: 400px;
   font-size: 12px;
+}
+
+.recipe-box {
+  position: relative; 
+  border: 1px solid black;
+  padding: 10px;
+  margin-bottom: 10px;
+  transition: border-color 0.3s, box-shadow 0.3s; 
+}
+
+.recipe-box:hover {
+  border-color: #007bff; 
+  box-shadow: 0 0 10px rgba(0, 123, 255, 0.5); 
+}
+
+.recipe-box h2 {
+  margin-top: 0;
+  text-align: center; 
+}
+
+.save-button {
+  position: absolute; 
+  top: 5px; 
+  right: 5px; 
+}
+
+.recipe-box img {
+  max-width: 100%;
+  height: auto;
+  margin-bottom: 10px;
+  display: block; 
+  border-radius: 5px; 
+}
+
+.recipe-box p {
+  max-width: 400px;
+  font-size: 12px;
+  text-align: center; 
+}
+
+.save-button button {
+  padding: 5px 10px;
+  font-size: 12px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.save-button button:hover {
+  background-color: #0056b3;
 }
